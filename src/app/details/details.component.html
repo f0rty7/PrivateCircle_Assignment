@@ -1,0 +1,9 @@
+<div class="details_wrapper">
+  <div class="user_details" *ngFor="let data of selectedDetails">
+    <div class="desc" *ngIf="data.details != null">{{ data.details }}</div>
+    <div class="no_desc" *ngIf="data.details === null">
+      No description yet
+      <span> + Add Description</span>
+    </div>
+  </div>
+</div>

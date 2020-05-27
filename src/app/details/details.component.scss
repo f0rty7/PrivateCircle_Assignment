@@ -1,0 +1,23 @@
+.details_wrapper{
+  margin: 2rem 1rem 1rem 1rem;
+
+  .no_desc{
+    background: #dbd8d8;
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .desc{
+    text-align: center;
+    font-size: 18px;
+    color: blue;
+  }
+  span {
+    font-size: 18px;
+    color: hsl(200, 67%, 29%);
+    font-weight: bold;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

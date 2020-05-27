@@ -1,0 +1,32 @@
+<div class="main_table_wrapper">
+  <div>
+    <table style="width: 100%;">
+      <thead>
+        <tr>
+          <th class="head_1">Date</th>
+          <th class="head_2">List Name</th>
+          <th class="head_3">No. of Entities</th>
+          <th></th>
+          <th class="head_4">Actions</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of tableData | search: query">
+          <td class="cell_1">{{ data.date }}</td>
+          <td class="cell_2">{{ data.list_names }}</td>
+          <td class="cell_3" *ngIf="data.enteries != null">{{ data.enteries }}</td>
+          <td class="cell_3" *ngIf="data.enteries === null">0</td>
+          <td></td>
+          <td class="cell_4">
+            <i class="fa fa-envelope-open"></i>
+            <i class="fa fa-share-alt" style="margin-left: 1rem;"></i>
+            <i class="fa fa-pencil" style="margin-left: 1rem;"></i>
+            <i class="fa fa-trash" style="margin-left: 10px;"></i>
+          </td>
+          <td class="cell_5" (click)="getDetails(data.id)" style="padding: unset;"><span class="yo">Details</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
