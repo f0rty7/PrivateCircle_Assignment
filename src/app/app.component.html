@@ -1,20 +1,22 @@
 <div class="top_wrapper">
   <div class="user_intercation">
-    <button class="user_button">
-      <a>
-        <i class="fa fa-list-ul" aria-hidden="true"></i> SAVED LISTS
-      </a>
-    </button>
-    <button class="user_button">
-      <a>
-        <i class="fa fa-filter" aria-hidden="true"></i> SAVED FILTERS
-      </a>
-    </button>
-    <button class="user_button">
-      <a>
-        <i class="fa fa-history" aria-hidden="true"></i> SEARCH HISTORY
-      </a>
-    </button>
+    <div class="button_wrapper">
+      <button class="user_button">
+        <a>
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SAVED LISTS</span>
+        </a>
+      </button>
+      <button class="user_button">
+        <a>
+          <i class="fa fa-filter" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SAVED FILTERS</span>
+        </a>
+      </button>
+      <button class="user_button">
+        <a>
+          <i class="fa fa-history" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SEARCH HISTORY</span>
+        </a>
+      </button>
+    </div>
   </div>
   <div class="white_space"></div>
   <div class="user_search">
@@ -23,9 +25,6 @@
     </div>
   </div>
 </div>
-
-<hr style="margin-top: 2rem;border-bottom: 1px solid #99999991;opacity: 0.5;">
-
 
 <div class="bottom_wrapper">
   <app-main-table class="table_main" [tableData]="dummyData" (selectedDetails)="getSelectDetails($event)"></app-main-table>

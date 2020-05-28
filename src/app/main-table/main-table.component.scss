@@ -20,7 +20,7 @@
       font-weight: bold;
       padding: 10px 20px;
       background: white;
-      border-bottom: 4px solid blue;
+      border-bottom: 4px solid #242498;
     }
   }
   .cell_4{
@@ -39,7 +39,7 @@
     border-collapse: collapse;
 
     td, th {
-      height: 50px;
+      height: 70px;
       transition: all 0.3s;
       padding: 8px;
       border-bottom: 1px solid #99999991;
@@ -47,14 +47,13 @@
 
     tr {
       &:hover{
-        background-color: rgb(218, 218, 218);
-        font-weight: bold;
-        opacity: 1;
+        background-color: #dadada7d;
       }
     }
 
     th {
       font-weight: bold;
+      opacity: 0.7;
     }
 
     i {

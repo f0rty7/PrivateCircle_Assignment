@@ -1,37 +1,44 @@
 .top_wrapper{
   display: flex;
-  margin-top: 2rem;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  background-color: #dadada7d;
 
   .user_intercation{
-    width: 35%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 2rem;
+    justify-content: flex-start;
 
-    .user_button{
-      padding: 10px;
-      background-color: white;
-      border-style: none;
-      font-size: 15px;
-      border-color: white;
-      border-width: 0;
-      border-radius: 4px;
-      outline: 0;
+    .button_wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .user_button{
+        padding: 10px 12px;
+        background-color: #dadada00;
+        border-style: none;
+        border-width: 0;
+        border-radius: 4px;
+        outline: 0;
 
-      &:focus{
-        background-color: hsl(201, 100%, 13%);;
-        color: white;
+        &:focus{
+          background-color: hsl(201, 100%, 13%);
+          color: white;
+          font-weight: bold;
+        }
       }
+
     }
   }
 
   .white_space{
-    width: 20%;
+    min-width: 200px;
   }
 
   .user_search{
     width: 40%;
-    margin: auto 2rem auto 0;
+    margin: 5px 0;
+    justify-content: flex-end;
     .user_input{
       margin: auto;
     }
@@ -41,7 +48,16 @@
       box-sizing : border-box;
       font-size: 1.3rem;
       border: 1px solid #99999991;
+
+      &:focus{
+        outline-color: #00b8ff82;
+      }
     }
+  }
+
+  i {
+    vertical-align: bottom;
+    font-size: 15px;
   }
 }
 
@@ -49,14 +65,14 @@
   display: flex;
   .table_main{
     width: 80%;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 120px);
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: scroll;
   }
   .details_page{
     width: 20%;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 120px);
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: scroll;
