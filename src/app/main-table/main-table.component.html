@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let data of tableData | search: query">
+        <tr *ngFor="let data of tableData| search: query; let first = first; let i = index"  [ngClass]="{'selected_list': selectedList && i == 0}" (click)="selectedList = false">
           <td class="cell_1">{{ data.date }}</td>
           <td class="cell_2">{{ data.list_names }}</td>
           <td class="cell_3" *ngIf="data.enteries != null">{{ data.enteries }}</td>

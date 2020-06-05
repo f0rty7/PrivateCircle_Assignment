@@ -1,17 +1,17 @@
 <div class="top_wrapper">
   <div class="user_intercation">
     <div class="button_wrapper">
-      <button class="user_button">
+      <button [ngClass]="{'selected_button': defaultSelectedTab, 'user_button': !defaultSelectedTab}" (click)="defaultSelectedTab = true">
         <a>
           <i class="fa fa-list-ul" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SAVED LISTS</span>
         </a>
       </button>
-      <button class="user_button">
+      <button class="user_button" (click)="defaultSelectedTab = false">
         <a>
           <i class="fa fa-filter" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SAVED FILTERS</span>
         </a>
       </button>
-      <button class="user_button">
+      <button class="user_button" (click)="defaultSelectedTab = false">
         <a>
           <i class="fa fa-history" aria-hidden="true"></i><span style="margin-left: 10px;letter-spacing: 1px;">SEARCH HISTORY</span>
         </a>

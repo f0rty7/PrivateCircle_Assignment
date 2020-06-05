@@ -10,7 +10,6 @@ export class DetailsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() { }
 
 }
